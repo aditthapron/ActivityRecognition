@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Activity-Recognition</string>
+    <string name="img_activity">img_activity</string>
+    <string name="textview">TextView</string>
+    <!--
+    <string name="running_toast"> You are Running</string>
+    <string name="still_toast">You are Still</string>
+    <string name="walking_toast">You are Walking</string>
+    -->
+</resources>
