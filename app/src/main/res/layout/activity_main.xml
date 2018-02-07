@@ -7,11 +7,45 @@
     tools:context="com.anabella.activity_recognition.MainActivity">
 
 
-
-    <ImageView
-        app:srcCompat = "@drawable/img_still"
-        android:id="@+id/x_activity"
-        android:contentDescription="@string/img_activity"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visits to Fuller labs geoFence: "
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visits to Library geoFence: "
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <!--GoogleMap fragment-->
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <ImageView
+            android:id="@+id/x_activity"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/img_activity"
+            android:cropToPadding="false"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/img_still" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
